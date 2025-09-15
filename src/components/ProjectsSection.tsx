@@ -13,7 +13,7 @@ const ProjectsSection = ({ className }: ProjectsSectionProps) => {
       description: "A responsive personal portfolio website showcasing my skills, projects, and achievements. Built with modern web technologies and clean design principles.",
       technologies: ["HTML", "CSS", "JavaScript"],
       icon: "🎨",
-      status: "Live",
+      // status: "Live",
       link: "#"
     },
     {
@@ -21,7 +21,7 @@ const ProjectsSection = ({ className }: ProjectsSectionProps) => {
       description: "An interactive task management application with local storage functionality. Features include adding, editing, deleting, and marking tasks as complete.",
       technologies: ["HTML", "CSS", "JavaScript", "Local Storage"],
       icon: "📝",
-      status: "Completed",
+      // status: "Completed",
       link: "#"
     },
     {
@@ -29,7 +29,7 @@ const ProjectsSection = ({ className }: ProjectsSectionProps) => {
       description: "A dynamic weather application that fetches real-time weather data using API integration. Displays current conditions and forecasts with a clean interface.",
       technologies: ["HTML", "CSS", "JavaScript", "API Integration"],
       icon: "🌤️",
-      status: "In Progress",
+      // status: "In Progress",
       link: "#"
     }
   ];
@@ -54,11 +54,11 @@ const ProjectsSection = ({ className }: ProjectsSectionProps) => {
                   <div className="text-4xl">{project.icon}</div>
                   <span className={cn(
                     "text-xs font-medium px-3 py-1 rounded-full",
-                    project.status === "Live" ? "bg-green-100 text-green-800" :
-                    project.status === "Completed" ? "bg-blue-100 text-blue-800" :
+                    // project.status === "Live" ? "bg-green-100 text-green-800" :
+                    // project.status === "Completed" ? "bg-blue-100 text-blue-800" :
                     "bg-yellow-100 text-yellow-800"
                   )}>
-                    {project.status}
+                 {/* {project.status} */}
                   </span>
                 </div>
                 <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-smooth">
